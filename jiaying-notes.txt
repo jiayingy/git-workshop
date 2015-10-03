@@ -1,0 +1,50 @@
+touch [file.extension]
+	creates a new file with name [file.extension]
+
+git init 
+	[initializes a new empty repo in current directory]
+
+git add [file]
+	[tells git to start tracking a specific file]
+
+git status
+	[shows the status of working directory]
+
+git commit -m [comment]
+	[make changes to git]
+
+git log 
+	[shows all commits that were made]
+
+git log --oneline
+
+git diff 
+	[shows what has been changed between working directory and staging area]
+
+git branch 
+	[shows all the branches that the repo contains, has a * for the branch you are on]
+
+git branch [name]
+	[creates a new branch [name]]
+
+git checkout [branch-name]
+	[switching to [branch]]
+
+git merge [branch]
+	[merge changes on [branch-name] into current branch]
+
+git checkout [commit-id]
+	[switches to commit]
+
+git revert --no-edit [commit-id]
+	[undo the previous command, without changing the commit message]
+
+git reset --hard
+	[undo previous command and throws away all uncommited changes]
+
+Branches - parallel universes where we can work on different things in isolation
+
+
+master is always pointing to the latest commit. 
+if want to add new features, but unsure if it can work well, create a new branch that points to the latest commit and to master
+commit the updates for the new feature to the new branch
